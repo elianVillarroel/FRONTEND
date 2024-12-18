@@ -1,0 +1,185 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-image: url('/assets/fondoiniciosesion.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header */
+header {
+    width: 100%;
+    padding: 20px 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+  
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 30px;
+    color: white;
+    text-transform: uppercase;
+}
+  
+.navegacion {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+    margin-right: 30px;
+}
+  
+.navegacion a {
+    text-decoration: none; 
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+  
+  .navegacion a[href="/registrogeneral"] {
+    text-decoration: underline; 
+}
+  
+  .navegacion a:hover {
+    color: rgb(193, 185, 223);
+}
+  
+.boton-registro {
+    background-color: #0a3057;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+  
+.boton-registro:hover {
+    background-color: #082a4f;
+    transform: scale(1.05);
+}
+
+.fondoN {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 500px;
+    padding: 40px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    top: 100px;
+    left: 700px;
+}
+
+.container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    top: 150px;
+    left: 400px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputGroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+label {
+    color: white;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+#nombre,
+#contrasena,
+#numcontacto,
+#email {
+    width: 80%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.titulo2 {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.tipousuario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.tipo {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    gap: 5px;
+}
+
+.tipo img {
+    cursor: pointer;
+}
+
+.boton {
+    width: 50%;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #eefb03;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+    display: center;
+    margin: auto;
+}
+
+.boton:hover {
+    background-color: #555;
+}

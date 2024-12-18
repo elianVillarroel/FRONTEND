@@ -1,0 +1,56 @@
+<div class = "app-mapaeventos-container">
+    
+        <div class="fondooscuro">
+            <div class="fondooscuro">
+                <header>
+                    <div class="logo">ESPACIOS BOLIVIA</div>
+                    <nav class="navegacion">
+                        <a href="/iniciopagina">INICIO</a>
+                        <a href="/calendario">CALENDARIO</a>
+                        <a href="/mapa">MAPA</a>
+                        <a href="/iniciosesion">INICIAR SESIÓN</a>
+                        <a href="/registrogeneral" class="boton-registro">REGISTRO</a>
+                    </nav>
+                </header>
+            </div>
+        </div>
+            <div class="l2">
+                <h1><br><p>MAPA CERCADO, COCHABAMBA</p></h1>
+                <div class="date-container">
+                    <span id="current-date"></span>
+                    <button id="calendar-button"><img src="/assets/calendarioicono.jpg" alt="Calendario"></button>
+                    <input type="date" id="calendar-input" class="hidden">
+                </div>
+            </div>  
+            <div style="color:white;">
+                <form [formGroup]="formGroup" class="card flex justify-center">
+                    <p-select 
+                    formControlName="selectedCity" 
+                    [options]="eventos" 
+                    optionLabel="name" 
+                    placeholder="Selecciona un evento" 
+                    class="w-full md:w-56"/>
+                </form>
+
+                <!--<p-orderlist [value]="eventos" dataKey="id" breakpoint="575px">
+                    <ng-template pTemplate="evento" let-option>
+                        {{evento.name}}
+                    </ng-template>
+                </p-orderlist>-->
+
+            </div>
+        <div id="map" style="width: 70%; height: 500px;">
+            <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3807.651002292929!2d-66.1514722!3d-17.3805186!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e374053d43ff91%3A0xa5737a19da31793!2sCine%20Center!5e0!3m2!1ses-419!2sbo!4v1734472896126!5m2!1ses-419!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+        </div> <!-- Ajustamos el mapa aquí -->
+        
+        <!-- Botón centrado debajo del mapa -->
+        <div class="center-button">
+            <button id="register-event-button">Registrar Evento</button>
+        </div>       
+        <div class="back-button">
+             <a href="pagina-anterior.html"><img src="/assets/flechavolver.jpg" alt="Volver" title="Volver"></a>
+         </div>
+
+        
+
+</div>

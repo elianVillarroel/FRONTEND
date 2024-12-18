@@ -1,0 +1,173 @@
+<div class = "app-registroevento-container">
+    <body>
+        <div class="fondo">
+            <div class="fondooscuro">
+                <header>
+                    <nav>
+                        <!-- Logotipo y nombre -->
+                        <div class="halloween"></div>
+                        <ul class="logo-nombre">
+                            <span>ESPACIOS</span>
+                            <span>BOLIVIA</span>
+                        </ul>
+                        <!-- Menú principal centrado -->
+                        <ul class="menu">
+                            <li><a href="/bienvenidoreg">INICIO</a></li>
+                            <li><a href="/calendario">CALENDARIO</a></li>
+                        </ul>
+                        <!-- Inicio de sesión y botón a la derecha -->
+                        <div class="right-section">
+                            <ul class="extra-menu">
+                                <li><a href="demostrations.html">{{usuario.nombre}}</a></li>
+                            </ul>
+                            <div class="halloween"></div>
+                        </div>
+                    </nav>
+                </header>
+            </div>
+            <div class="back-button">
+                <a (click)="volverBienvenidaPresi()"><img src="/assets/flechavolver.jpg" alt="Volver" title="Volver"></a>
+            </div>
+                <section class="registro-evento">
+                    <h2>Registro de Evento</h2>
+                    <form id = "registroForm" class="formulario" (ngSubmit)="registrarevento()">
+                        <div class="form-group">
+                            <label for="nombre">Nombre del Evento:</label>
+                            <input 
+                            type="text" 
+                            id="nombre"
+                            [(ngModel)] = "nombre" 
+                            name="nombre" 
+                            placeholder="Escribe el nombre del evento" 
+                            required>
+                        </div>
+                        <div class="form-group">
+                            <label for = "tipo_evento"> Tipo de evento:
+                                <select [(ngModel)]="tipo_evento" name="tipo_evento" required>
+                                  <option value="MedioAmbientales">Medio Ambientales</option>
+                                  <option value="Cultural">Cultural</option>
+                                  <option value="Comida">Comida</option>
+                                  <option value="Politica">Política</option>
+                                </select>
+                              </label>                    
+                        </div>
+
+                        <div class="form-group">
+                            <label for="descripcion">descripcion:</label>
+                            <input 
+                            type="text" 
+                            id="descripcion"
+                            [(ngModel)] = "descripcion" 
+                            name="descripcion" 
+                            placeholder="Escribe la descripcion" 
+                            required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="id_usuario">Nombre de usuario:</label>
+                            <input 
+                            type="text" 
+                            id="id_usuario"
+                            [(ngModel)] = "id_usuario" 
+                            name="id_usuario" 
+                            placeholder="{{usuario.nombre}}"
+                            required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="id_espacio">Espacio Reservado:</label>
+                            <input 
+                            type="text" 
+                            id="id_espacio"
+                            [(ngModel)] = "id_espacio" 
+                            name="id_espacio" 
+                            required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="fecha_evento">Fecha del Evento:</label>
+                            <input 
+                            type="date" 
+                            id="fecha_evento" 
+                            name="fecha_evento"
+                            [(ngModel)] = "fecha_evento" 
+                            placeholder="aaaa-mm-dd" 
+                            required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="capacidad_personas">Capacidad Personas:</label>
+                            <input
+                            type="number" 
+                            id="capacidad_personas"
+                            [(ngModel)] = "capacidad_personas" 
+                            name="capacidad_personas" 
+                            placeholder="0" 
+                            required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="hora_inicio">Hora de inicio:</label>
+                            <input
+                            type="number" 
+                            id="hora_inicio"
+                            [(ngModel)] = "hora_inicio" 
+                            name="hora_inicio" 
+                            placeholder="00:00" 
+                            required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="hora_fin">Hora de Finalización:</label>
+                            <input
+                            type="number"
+                            id="hora_fin"
+                            [(ngModel)] = "hora_fin" 
+                            name="hora_fin" 
+                            placeholder="00:00" 
+                            required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="img_evento">Imagen del Evento:</label>
+                            <input 
+                            type="url" 
+                            id="img_evento" 
+                            name="img_evento"
+                            [(ngModel)] = "img_evento" 
+                            placeholder="url imagen" 
+                            required>
+                        </div>
+
+                        <h3 class="titulo2">FORMA DE PAGO</h3>
+                        <div class="tipo_pago">
+                            <label>
+                                <input 
+                                type="radio" 
+                                id="Qr" 
+                                name="tipo_pago"
+                                [(ngModel)]="tipo_pago" 
+                                value="Qr" 
+                                required>
+                                <span>Qr</span>
+                            </label>
+                            <label>
+                                <input 
+                                type="radio" 
+                                id="Tarjeta" 
+                                name="tipo_pago"
+                                [(ngModel)]="tipo_pago" 
+                                value="Tarjeta" 
+                                required>
+                                <span>Tarjeta</span>
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit">Continuar</button>
+                        </div>
+                    </form>
+                </section>  
+        </div>
+    </body>
+</div>

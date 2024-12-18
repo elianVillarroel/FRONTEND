@@ -1,0 +1,95 @@
+<div class="iniciosesion-container">
+  <div class="fondo">
+    <section class="fondoN">
+        <header>
+            <div class="logo">ESPACIOS BOLIVIA</div>
+            <nav class="navegacion">
+                <a href="/iniciopagina">INICIO</a>
+                <a href="/calendario">CALENDARIO</a>
+                <a href="/iniciosesion" class="iniciosesion">INICIAR SESIÓN</a>
+                <a href="/registrogeneral" class="boton-registro">REGISTRO</a>
+            </nav>
+        </header>
+        <!-- FORMULARIO -->
+        <section class="container">
+        <h1 id="titulo1">INICIO DE SESIÓN</h1>
+        <form (ngSubmit)="iniciarSesion()">
+          <div class="inputGroup">
+            <label for="nombre">NOMBRE DE USUARIO<span class="required"></span></label>
+            <input
+              type="text"
+              id="nombre"
+              [(ngModel)]="nombre"
+              name="nombre"
+              required
+            />
+          </div>
+
+          <div class="back-button">
+            <a [routerLink]="['/iniciopagina']"> 
+              <img src="/assets/flechavolver.jpg" alt="Volver" title="Volver" />
+            </a>
+          </div>
+
+          <div class="inputGroup">
+            <label for="password">CONTRASEÑA<span class="required"></span></label>
+            <input
+              type="password"
+              id="password"
+              [(ngModel)]="contrasena"
+              name="contrasena"
+              required
+            />
+          </div>
+
+          <h3 class="titulo2">TIPO DE USUARIO</h3>
+            <div class="tipousuario">
+                <label>
+                    <input 
+                    type="radio" 
+                    id="presidente" 
+                    name="tipousuario"
+                    [(ngModel)] = "tipousuario" 
+                    value="Presidente OTB" 
+                    required>
+                    <span>PRESIDENTE OTB</span>
+                </label>
+                <label>
+                    <input 
+                    type="radio" 
+                    id="presidente" 
+                    name="tipousuario"
+                    [(ngModel)] = "tipousuario" 
+                    value="Empresa" 
+                    required>
+                    <span>EMPRESA</span>
+                </label>
+                <label>
+                    <input 
+                    type="radio" 
+                    id="Usuario" 
+                    name="tipousuario"
+                    [(ngModel)] = "tipousuario"  
+                    value="Usuario" 
+                    required>
+                    <span>PERSONA COMENTAR</span>
+                </label>
+                <label>
+                    <input 
+                    type="radio" 
+                    id="administrador"
+                    name="tipousuario"
+                    [(ngModel)] = "tipousuario"  
+                    value="Admin" 
+                    required>
+                    <span>ADMINISTRADOR</span>
+                </label>
+            </div>
+            
+          <button type="submit">Ingresar</button>
+        </form>
+        <p *ngIf="mensajeError" class="error">{{ mensajeError }}</p>
+      </section>
+    </section>
+  </div>
+</div>

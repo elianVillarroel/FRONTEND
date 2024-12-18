@@ -1,0 +1,299 @@
+/* Reset y configuración inicial */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+    padding: 0;
+}
+/* Header */
+header {
+    width: 100%;
+    padding: 20px 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+  
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 30px;
+    color: white;
+    text-transform: uppercase;
+}
+  
+.navegacion {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+    margin-right: 30px;
+}
+  
+.navegacion a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+ 
+.navegacion a[href="/iniciopagina"] {
+    text-decoration: underline; 
+}
+ 
+.navegacion a:hover {
+    color: rgb(193, 185, 223);
+}
+
+/* Fondo de la página */
+.fondo {
+    background-color: black;
+    width: 100%;
+    flex: 1;
+}
+
+.fondooscuro {
+    background-color: black;
+    padding: 20px;
+}
+
+/* Navegación */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px; /* Ajusta los márgenes internos */
+    flex-wrap: wrap;
+}
+
+/* Logotipo y nombre */
+.logo-nombre, .halloween {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna */
+    color: white;
+    font-weight: bold;      /* Hace el texto más destacado */
+}
+.logo span {
+    line-height: 1.2; /* Espaciado entre ESPACIOS y BOLIVIA */
+}
+
+/* Menú principal */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 120px; /* Espacio entre los elementos del menú */
+    margin: 0 auto; /* Centra el menú principal */
+    color: white;
+    text-decoration: underline;
+}
+
+.menu li {
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.menu li:hover {
+    background-color: #444;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Sección derecha: Inicio de sesión y botón */
+.right-section {
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    gap: 20px; /* Espacio entre "Inicio de sesión" y el botón */
+    flex-wrap: wrap;
+}
+
+.extra-menu {
+    list-style: none;
+}
+
+.extra-menu li {
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.extra-menu li:hover {
+    background-color: #444;
+}
+
+.extra-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Botón de registro */
+.buy-tickets button {
+    background-color: #ff9f00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-tickets button:hover {
+    background-color: #e87e00;
+}
+
+
+.l2 {
+    margin-left: 23.5%;
+    position: relative;
+    color: white;
+    text-align: left;
+    margin-top: 20px;
+    display: flex; /* Usamos flexbox para la alineación horizontal */
+    align-items: center; /* Alinea verticalmente los elementos */
+    margin-bottom: 2%;
+}
+/* Ajustes para el contenedor de la fecha y el calendario */
+.date-container {
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+}
+
+#current-date {
+    margin-right: 10px;
+}
+
+#calendar-button img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#calendar-input {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#calendar-input.mobile {
+    width: calc(100% - 20px);
+    left: 10px;
+    top: 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Ajustes para el mapa */
+#map {
+    width: 90%;  /* Ajusta el ancho del mapa */
+    height: 400px; /* Ajusta la altura del mapa */
+    margin: 20px auto; /* Centra el mapa horizontalmente y añade espacio superior/inferior */
+    border: 2px solid white; /* Añade un borde blanco alrededor del mapa */
+    border-radius: 10px; /* Esquinas redondeadas */
+}
+
+.center-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; /* Espacio entre el mapa y el botón */
+}
+
+#register-event-button {
+    background-color: #ff9f00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#register-event-button:hover {
+    background-color: #e87e00;
+}
+
+/* Ajustes de la flecha de retorno */
+
+.back-button {
+    position: absolute;
+    bottom: 330px;
+    left: 190px;
+}
+
+.back-button a img {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.back-button a img:hover {
+    transform: scale(1.1);
+}
+
+/* Media queries para dispositivos pequeños */
+@media screen and (max-width: 700px) {
+    .l2 {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        margin-left: 5%;
+        align-items: flex-start; /* Alinea los elementos a la izquierda */
+    }
+    .l2 h1 {
+        margin-bottom: 10px; /* Añade espacio debajo del título */
+        text-align: left; /* Alinea el texto a la izquierda */
+    }
+    .date-container {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: flex-start; /* Alinea los elementos a la izquierda */
+        gap: 5px; /* Espacio más pequeño entre los elementos */
+    }
+    .menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .right-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+    #map {
+        width: 100%; /* Asegura que el mapa se ajuste en pantallas pequeñas */
+    }
+    .back-button {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+    }
+}
+
+
+.p-dropdown-panel {
+    z-index: 1000 !important;
+  }

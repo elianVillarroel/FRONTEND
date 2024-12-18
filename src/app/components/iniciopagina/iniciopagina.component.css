@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+    padding: 0;
+}
+
+
+/* Header */
+header {
+    width: 100%;
+    padding: 20px 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+  
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 30px;
+    color: white;
+    text-transform: uppercase;
+}
+  
+.navegacion {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+    margin-right: 30px;
+}
+  
+.navegacion a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+ 
+.navegacion a[href="/iniciopagina"] {
+    text-decoration: underline; 
+}
+ 
+.navegacion a:hover {
+    color: rgb(193, 185, 223);
+}
+  
+.boton-registro {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+  
+.boton-registro:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.hero {
+    background-image: url('/assets/FONDO LETRA.png');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 80px;
+    text-align: center;
+    height: 250px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    color: rgb(255, 252, 252);
+}
+
+.evento-card {
+    flex: 0 0 300px;
+    margin: 0 10px;
+    min-width: 250px;
+    background-color: rgb(28, 26, 26);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+
+.evento-card img {
+    /*max-width: 100%;*/
+    width: 100%; /* O un valor fijo, como '300px' */
+    height: 200px; /* Altura fija */
+    object-fit: cover; /* Ajusta la imagen sin distorsionar */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.evento-card h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: white;
+}
+
+.evento-card p {
+    color: white;
+    font-size: 14px;
+}
+
+
+  .no-eventos-message {
+    text-align: center; /* Centrar el texto */
+    color: #888; /* Texto gris claro */
+    font-size: 16px; /* Tamaño del texto */
+    margin-top: 24px; /* Separación superior */
+  }
+
+
+.container-carousel {
+    width: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+
+    background-color: black;
+}
+
+.carousel {
+    display: flex;
+    gap: 15px;
+    transition: transform 0.3s ease;
+}
+
+/* Estilo para un footer (opcional) */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: white;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.arrow.left {
+    left: 30px;
+}
+
+.arrow.right {
+    right: 30px;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+

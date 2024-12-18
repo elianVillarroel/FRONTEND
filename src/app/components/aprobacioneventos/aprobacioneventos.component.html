@@ -1,0 +1,120 @@
+<div class = "aprobacioneventos-container">
+    <body class="fondo">
+        <header>
+            <nav>
+                <!-- Logotipo y nombre -->
+                <div class="halloween"></div>
+                <ul class="logo-nombre">
+                    <span>ESPACIOS</span>
+                    <span>BOLIVIA</span>
+                </ul>
+                <!-- Menú principal centrado -->
+                <ul class="menu">
+                    <li><a href="/iniciopagina">INICIO</a></li>
+                    <li><a href="/iniciocalendario">CALENDARIO</a></li>
+                </ul>
+                <!-- Inicio de sesión y botón a la derecha -->
+                <div class="right-section">
+                    <ul class="extra-menu">
+                        <li><a href="demostrations.html">NOMBRE DE USUARIO</a></li>
+                    </ul>
+                    <div class="halloween"></div>
+                </div>
+            </nav>
+        </header>
+        <section class="container">
+            <div class="evento">
+                <form>
+                    <h1>Evento</h1>
+                    <div class="form-group">
+                        <label for="evento">Altar Todos Santos</label>
+                        <input type="text" id="evento" value="Altar Todos Santos" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha">Fecha a realizar:</label>
+                        <input type="text" id="fecha" value="03 Nov. 2024 | 9:00 A.M" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="lugar">Lugar:</label>
+                        <input type="text" id="lugar" value="Cementerio General" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="permisos">Permisos necesarios:</label>
+                        <textarea id="permisos" readonly>Describe los permisos necesarios</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="Tipo de Evento">Tipo de Eventos:</label>
+                        <input type="text" id="tipo" value="Graduacion Universitaria" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="documentos">Archivos:</label>
+                        <a href="#" id="documentos">ArchivosDocumentos.PDF</a>
+                    </div>
+                    <!-- Input oculto para activar el modal -->
+                    <a href="#modal" class="btn-aprobar">APROBAR</a>
+                </form>
+            </div>
+                <!-- Cajita Modal-->
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <p class="titulo_aprobado">RESERVA APROBADA</p><br>
+                    <img src="/assets/pulgar.jpeg" alt="pulgar" width="100"><br>
+                    <p  class="contenido_aprobado">Se cumplio con todos los permisos necesarios para la realizacion del evento</p>
+                    <br><br>
+                    <p class="pie_aprobado">Web Oficial</p><img src="/assets/bien.jpeg" alt="bien" width="30">
+                    <a href="#" class="btn-aprobar">CERRAR</a>
+                </div>
+            </div>
+                <!-- Sección de Tareas y Eventos -->
+        <div class="tareas">
+            <h1>Tareas y Eventos</h1>
+    
+            <!-- Bandeja de Entrada -->
+            <div class="seccion">
+                <h2>Bandeja de Entrada</h2>
+                <div class="seccion_opciones">
+                    <img src="/assets/mail.jpeg" alt="mail" width="36"><p class="p">Tareas</p>
+                    <img src="/assets/mail.jpeg" alt="mail" width="36"><p class="p">Eventos</p>
+                </div>
+                <div class="filtros">
+                    <img src="/assets/sol.jpeg" alt="sol" width="36"><p class="p">Estado</p>
+                    <input type="checkbox" id="Nombre">
+                    <label for="Nombre" class="p">Nombre</label>
+                    <img src="/assets/calendarioicono.jpg" alt="calendario" width="36"><p class="p">Plazo</p>
+                    <img src="/assets/texto.jpeg" alt="texto" width="36"><p class="p">Descripción</p>
+                </div>
+                <p class="p no-results">No filter results.</p>
+            </div>
+    
+            <!-- Tareas Diarias -->
+            <div class="seccion">
+                <h2>Tareas Diarias</h2>
+                <div class="seccion_opciones">
+                    <img src="/assets/reloj.jpeg" alt="reloj" width="36"><p class="p">Hoy</p>
+                    <img src="/assets/reloj.jpeg" alt="reloj" width="36"><p class="p">Atrasadas</p>
+                    <img src="/assets/pausa.jpeg" alt="pausa" width="36"><p class="p">En Pausa</p>
+                    <img src="/assets/lineas.jpeg" alt="lineas" width="36"><p class="p">Por Estado</p>
+                </div>
+                <div class="filtros">
+                    <img src="/assets/sol.jpeg" alt="sol" width="36"><p class="p">Estado</p>
+                    <input type="checkbox" id="NombreDiarias">
+                    <label for="NombreDiarias" class="p">Nombre</label>
+                    <img src="/assets/calendarioicono.jpg" alt="calendario" width="36"><p class="p">Plazo</p>
+                    <img src="/assets/texto.jpeg" alt="texto" width="36"><p class="p">Descripción</p>
+                </div>
+               <p class="p no-results">No filter results.</p>
+         </div>
+    
+            <!-- Próximos Eventos -->
+         <div class="seccion">
+             <h2>Próximos Eventos</h2>
+             <div class="seccion_opciones">
+                  <img src="/assets/lineas_punto.jpeg" alt="lineas_punto" width="36"><p class="p">Próximos Eventos</p>
+                 <img src="/assets/calendarioicono.jpg" alt="calendario" width="36"><p class="p">Calendario</p>
+                </div>
+                <p class="p no-results">No filter results.</p>
+            </div>
+        </div>
+        </section>
+    </body>    
+</div>

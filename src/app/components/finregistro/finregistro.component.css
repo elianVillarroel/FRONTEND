@@ -1,0 +1,97 @@
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/fondoiniciosesion.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.fondoTexto {
+    background-color: white;
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 200px;
+    left: 500px;
+}
+
+.header {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 20px); /* Ajuste para mantener margen */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.x {
+    width: 20px;
+    cursor: pointer;
+}
+
+.espacio {
+    flex-grow: 1;
+    height: 2px;
+    background-color: gray;
+    margin-left: 10px;
+    padding: 12px;
+}
+
+.bordeTexto {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background-image: url('/assets/logofondoblanco.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+
+#titulo {
+    color: gray;
+    font-size: 1.2rem;
+}
+
+.mensaje {
+    text-align: center;
+}
+
+.texto {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+.boton-cerrar:hover {
+    color: red; /* Cambia el color al pasar el mouse */
+}
+  

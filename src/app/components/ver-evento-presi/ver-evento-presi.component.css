@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .fondo {
+    background-color: black;
+    color: white;
+    padding: 20px;
+  }
+  
+  .fondooscuro {
+    background-color: black;
+    padding: 20px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  /* Navegación */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px; /* Ajusta los márgenes internos */
+}
+
+/* Logotipo y nombre */
+.logo-nombre, .halloween {
+  display: flex;
+  flex-direction: column; /* Coloca los elementos en una columna */
+  color: white;
+  font-weight: bold;      /* Hace el texto más destacado */
+}
+.logo span {
+  line-height: 1.2; /* Espaciado entre ESPACIOS y BOLIVIA */
+}
+
+/* Menú principal */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 120px; /* Espacio entre los elementos del menú */
+  margin: 0 auto; /* Centra el menú principal */
+  color: white;
+  text-decoration: underline;
+}
+
+.menu li {
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.menu li:hover {
+  background-color: #444;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+  
+  .navegacion a:hover {
+    color: #ddd;
+  }
+  
+  .l2 {
+    margin-top: 20px;
+    text-align: left;
+    color: white;
+  }
+  
+  .formulario-container {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    color: white    ;
+    max-width: 800px;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-group button {
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 10px
+  }
+  
+  .form-group button:hover {
+    background-color: yellow;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .form-buttons button {
+    width: 20%;
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form-buttons button:hover {
+    background-color: #218838;
+  }
+  
+  #delete-button {
+    background-color: #dc3545;
+  }
+  
+  #delete-button:hover {
+    background-color: #c82333;
+  }
+  

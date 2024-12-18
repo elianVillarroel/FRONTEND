@@ -1,0 +1,40 @@
+<div class = "Calendario-container">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calendario de Eventos</title>
+        <!-- FullCalendar CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="fondo">
+            <div class="fondooscuro">
+                <header>
+                    <div class="logo">ESPACIOS BOLIVIA</div>
+                    <nav class="navegacion">
+                        <a href="/iniciopagina">INICIO</a>
+                        <a href="/calendario">CALENDARIO</a>
+                        <a href="/mapa">MAPA</a>
+                        <a href="/iniciosesion">INICIAR SESIÓN</a>
+                        <a href="/registrogeneral" class="boton-registro">REGISTRO</a>
+                    </nav>
+                </header>
+            </div>
+    
+            <div class="l2">
+                <h1>CALENDARIO 2024 - EVENTOS</h1>
+            </div>
+    
+            <div class="calendar-container">
+                <!-- Contenedor para el calendario -->
+                <div id="calendar"></div>
+            </div>
+        </div>
+    
+        <!-- FullCalendar JS -->
+        <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+        <!-- Archivo de configuración del calendario -->
+        <script src="/front/src/app/js/Calendario_de_eventos_script.js"></script>
+    </body>
+</div>

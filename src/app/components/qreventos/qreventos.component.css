@@ -1,0 +1,151 @@
+body {
+    background-image: url('/assets/fondoiniciosesion.jpg');
+    background-position: center;
+    background-size:88%;         
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+    width: 100%;
+    padding: 10px 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.logo-img {
+    width: 200px; 
+    
+}
+/* Navegación */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px; /* Ajusta los márgenes internos */
+}
+
+/* Logotipo y nombre */
+.logo-nombre, .halloween {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna */
+    color: white;
+    font-weight: bold;      /* Hace el texto más destacado */
+}
+.logo span {
+    line-height: 1.2; /* Espaciado entre ESPACIOS y BOLIVIA */
+}
+
+/* Menú principal */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 120px; /* Espacio entre los elementos del menú */
+    margin: 0 auto; /* Centra el menú principal */
+    color: white;
+    text-decoration: underline;
+}
+
+.menu li {
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.menu li:hover {
+    background-color: #444;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Sección derecha: Inicio de sesión y botón */
+.right-section {
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    gap: 20px; /* Espacio entre "Inicio de sesión" y el botón */
+}
+
+.extra-menu {
+    list-style: none;
+}
+
+.extra-menu li {
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.extra-menu li:hover {
+    background-color: #444;
+}
+
+.extra-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.contenido-central {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    color: white;
+    padding-top: 10px; 
+}
+
+.contenido-central h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.cuadro-blanco {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+
+.boton-finalizar {
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight:bolder;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    text-transform: uppercase;
+}
+
+.boton-finalizar:hover {
+    background-color: #e6c200;
+    transform: scale(1.05);
+}
+

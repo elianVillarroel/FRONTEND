@@ -1,0 +1,35 @@
+<div class="registraradmin-container">
+    <header>
+        <div class="logo">ESPACIOS BOLIVIA</div>
+        <nav class="navegacion">
+            <a href="/bienvenidoadmin">INICIO</a>
+            <a href="/calendario">CALENDARIO</a>
+            <a href="['/mapa']">MAPA</a>
+            <a href="#" class="boton-notificaciones">
+                <img src="/assets/icono-notificacion.png" class="icono-notificaciones">    
+            </a>
+            <a href="#">NOMBRE DE USUARIO</a>
+            <a href="#" class="boton-usuario">
+                <img src="/assets/usuario.png" class="icono-usuario">    
+            </a>
+        </nav>
+    </header>
+    
+    <section class="fondo">
+        <!-- Lista de eventos -->
+        <div *ngIf="eventos.length > 0; else noEventos">
+            <div class="evento-card" *ngFor="let evento of eventos">
+                <h3>{{ evento.nombre }}</h3>
+                <p>{{ evento.tipo_evento }}</p>
+                <p>{{ evento.fecha_evento }}</p>
+                <p>{{ evento.hora_inicio }} - {{ evento.hora_fin }}</p>
+                <p>{{ evento.espacio }}</p>
+            </div>
+        </div>
+        <ng-template #noEventos>
+            <p>No hay eventos disponibles en este momento.</p>
+        </ng-template>
+        <button class="evento-boton">REVISAR</button>
+        <button type="submit" class="boton">GESTIONAR ADMINISTRADORES</button>
+    </section>
+</div>

@@ -1,0 +1,68 @@
+<div class="bienvenidoregistro-container">
+  <div class="fondo">
+    <div class="fondooscuro">
+      <header>
+        <nav>
+          <!-- Logotipo y nombre -->
+          <div class="halloween"></div>
+          <ul class="logo-nombre">
+            <li><span>ESPACIOS</span></li>
+            <li><span>BOLIVIA</span></li>
+          </ul>
+          <!-- Menú principal centrado -->
+          <ul class="menu">
+            <li><a href="/bienvenidopresidente">INICIO</a></li>
+            <li><a href="/calendario">CALENDARIO</a></li>
+            <li><a href="/mapa">MAPA</a></li>
+          </ul>
+          <!-- Inicio de sesión y botón a la derecha -->
+          <div class="right-section">
+            <ul class="extra-menu">
+              <li>
+                <a href="demostrations.html" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                  {{usuario.nombre}}
+                </a>
+              </li>
+            </ul>
+            <div class="halloween"></div>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <div class="bienvenido">
+      <h1>BIENVENIDO, A ESPACIOS BOLIVIA</h1>
+      <p>Para el día de hoy tenemos {{eventos.length}} eventos.</p>
+
+      <div id="events-container">
+        <!-- Mostrar eventos -->
+        <div *ngIf="eventos.length > 0">
+          <div *ngFor="let evento of eventos" class="evento-card">
+            <div class="evento-content">
+              <div class="evento-informacion">
+                <h3>{{ evento.nombre }}</h3>
+                <p><strong>Fecha:</strong> {{ evento.fecha }}</p>
+                <p><strong>Hora:</strong> {{ evento.hora_inicio }}:00 - {{ evento.hora_fin }}:00</p>
+                <p><strong>Capacidad:</strong> {{ evento.capacidad_personas }} personas</p>
+                <p><strong>Tipo:</strong> {{ evento.tipo_evento }}</p>
+                <p><strong>Descripción:</strong> {{ evento.descripcion }}</p>
+                <div class="estado-check">
+                  <!-- Estado dinámico -->
+                  <span 
+                    [ngClass]="{'estado-confirmado': evento.estado === 'confirmado', 'estado-pendiente': evento.estado === 'pendiente' ,'estado-rechazado': evento.estado === 'rechazado' }">
+                  </span>
+                </div>
+                <!-- Botón Ver -->
+                <button (click)="verEvento(evento.id)">Ver</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Mensaje adicional -->
+        <p>Haz click en 'Añadir Evento' para reservar un espacio a utilizar por un evento.</p>
+        <div class="button-container">
+          <button id="add-event-button" class="add-event-button" (click)="goToRegistrar()">Añadir Evento</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

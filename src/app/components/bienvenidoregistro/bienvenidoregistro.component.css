@@ -1,0 +1,308 @@
+/* Reset y configuración inicial */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Fondo de la página */
+.fondo {
+    background-color: black;
+    width: 100%;
+    height: 100vh; /* Altura completa de la pantalla */
+}
+
+.fondooscuro {
+    background-color: black;
+    padding: 20px;
+}
+
+/* Navegación */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px; /* Ajusta los márgenes internos */
+}
+
+/* Logotipo y nombre */
+.logo-nombre, .halloween {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna */
+    color: white;
+    font-weight: bold;      /* Hace el texto más destacado */
+}
+.logo span {
+    line-height: 1.2; /* Espaciado entre ESPACIOS y BOLIVIA */
+}
+
+/* Menú principal */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 120px; /* Espacio entre los elementos del menú */
+    margin: 0 auto; /* Centra el menú principal */
+    color: white;
+    text-decoration: underline;
+}
+
+.menu li {
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.menu li:hover {
+    background-color: #444;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Sección derecha: Inicio de sesión y botón */
+.right-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #000;
+    padding: 10px;
+}
+  
+.extra-menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+  
+.extra-menu li {
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.extra-menu li:hover {
+    background-color: #444;
+}
+
+.extra-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-weight: bold;
+}
+  
+.user-info span {
+    font-size: 16px;
+}
+  
+.icono-usuario {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.estado-pendiente {
+    display: inline-block;
+    width: 20px; /* Tamaño del círculo */
+    height: 20px;
+    background-color: rgb(218, 218, 95); /* Color del círculo */
+    border-radius: 50%; /* Hace el elemento redondo */
+}
+
+.estado-confirmado {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(58, 195, 124); /* Color del círculo */
+    border-radius: 50%;
+}
+
+.estado-rechazado {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(171, 50, 54); /* Color del círculo */
+    border-radius: 50%;
+}
+  
+.halloween {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+/* Botón de registro */
+.buy-tickets button {
+    background-color: #ff9f00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-tickets button:hover {
+    background-color: #e87e00;
+}
+
+.bienvenido {
+    color: white;
+    padding: 20px;
+    margin-left: 50px; /* Margen izquierdo */
+    margin-right: 50px; /* Margen derecho */
+}
+
+.bienvenido h1 {
+    text-align: left; /* Alinea el título a la izquierda */
+    margin-bottom: 26px;
+}
+
+.bienvenido p {
+    text-align: left; /* Alinea los párrafos a la izquierda */
+    margin-bottom: 10px;
+}
+
+#events-container {
+    background-color: rgb(8, 8, 8); /* Fondo claro para los eventos */
+    padding: 0px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: left; /* Alinea el texto de los eventos a la izquierda */
+}
+
+
+.add-event-button {
+    padding: 10px 20px;
+    background-color: #007BFF; /* Color del botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.add-event-button:hover {
+    background-color: #0056b3; /* Color del botón al pasar el ratón */
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+}
+
+.evento-container {
+    padding: 15px;
+    border-bottom: 1px solid gray;
+}
+  
+.evento-container:last-child {
+    border-bottom: none;
+}
+
+.container {
+    text-align: center;
+    color: white;
+  }
+  
+  .eventos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .evento-card {
+    background-color: #333;
+    border-radius: 8px;
+    width: 200px;
+    margin: 10px;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .evento-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .evento-content p {
+    margin: 5px 0;
+    color: white;
+  }
+  
+  .estado-check span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  
+  .check-confirmado {
+    background-color: blue; /* Check en azul */
+  }
+  
+  .check-pendiente {
+    background-color: gray; /* Check en gris */
+  }
+  
+  button {
+    margin-top: 10px;
+    background-color: #ffde59;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ffc107;
+  }
+  
+@media screen and (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .right-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .bienvenido {
+        padding: 10px;
+        margin: 0;
+      }
+    
+    #events-container {
+        padding: 10px;
+    }
+}
+
+

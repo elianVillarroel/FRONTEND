@@ -1,0 +1,112 @@
+<div class="fondo">
+    <section class="fondoN">
+        <header>
+            <h1 id="titulo1">REGISTRO</h1>
+        </header>
+        <header>
+            <div class="logo">ESPACIOS BOLIVIA</div>
+            <nav class="navegacion">
+                <a href="/iniciopagina">INICIO</a>
+                <a href="/calendario">CALENDARIO</a>
+                <a href="/iniciosesion">INICIAR SESIÓN</a>
+                <a href="/registrogeneral" class="boton-registro">REGISTRO</a>
+            </nav>
+        </header>
+    </section>
+    <section class="container">
+        <form id="registroForm" class="formulario" (ngSubmit)="registrar()">
+            <!-- Grupo de Nombre de Usuario -->
+            <div class="inputGroup">
+                <label for="nombre">Nombre de Usuario:</label>
+                <input 
+                    type="text" 
+                    id="nombre" 
+                    name="nombre" 
+                    [(ngModel)] = "nombre"
+                    placeholder= "Escribe tu nombre" 
+                    required />
+            </div>
+            <!-- Grupo de Password -->
+            <div class="inputGroup">
+                <label for="contrasena">Password:</label>
+                <input 
+                    type="password" 
+                    id="contrasena" 
+                    name="contrasena" 
+                    [(ngModel)] = "contrasena"
+                    placeholder= "Escribe tu password" 
+                    required />
+            </div>
+
+            <!-- Grupo de Email -->
+            <div class="inputGroup">
+                <label for="email">Email:</label>
+                <input 
+                    type="email" 
+                    id="email"    
+                    name="email"
+                    [(ngModel)] = "email"  
+                    placeholder= "Escribe tu email " 
+                    required />
+            </div>
+
+            <!-- Grupo de Celular -->
+            <div class="inputGroup">
+                <label for="numcontacto">Celular:</label>
+                <input 
+                    type="number" 
+                    id="numcontacto"    
+                    name="numcontacto"
+                    [(ngModel)] = "numcontacto"  
+                    placeholder= "Escribe tu celular " 
+                    required />
+            </div>
+            
+            
+            <h3 class="titulo2">TIPO DE USUARIO</h3>
+            <div class="tipousuario">
+                <label>
+                    <input 
+                    type="radio" 
+                    id="presidente" 
+                    name="tipousuario"
+                    [(ngModel)] = "tipousuario" 
+                    value="Presidente OTB" 
+                    required>
+                    <span>PRESIDENTE OTB</span>
+                </label>
+                <label>
+                    <input 
+                    type="radio" 
+                    id="presidente" 
+                    name="tipousuario"
+                    [(ngModel)] = "tipousuario" 
+                    value="Empresa" 
+                    required>
+                    <span>EMPRESA</span>
+                </label>
+                <label>
+                    <input 
+                    type="radio" 
+                    id="Usuario" 
+                    name="tipousuario"
+                    [(ngModel)] = "tipousuario"  
+                    value="Usuario" 
+                    required>
+                    <span>PERSONA COMENTAR</span>
+                </label>
+                <label>
+                    <input 
+                    type="radio" 
+                    id="administrador"
+                    name="tipousuario"
+                    [(ngModel)] = "tipousuario"  
+                    value="Admin" 
+                    required>
+                    <span>ADMINISTRADOR</span>
+                </label>
+            </div>
+            <button type="submit" class="boton">CONTINUAR</button>
+        </form>
+    </section>
+</div>

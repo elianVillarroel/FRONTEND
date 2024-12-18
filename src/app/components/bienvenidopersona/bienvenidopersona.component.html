@@ -1,0 +1,54 @@
+<div class = "bienvenidoregistro-container">
+    <div class="fondo">
+      <div class="fondooscuro">
+        <header>
+          <nav>
+            <!-- Logotipo y nombre -->
+            <div class="halloween"></div>
+            <ul class="logo-nombre">
+              <span>ESPACIOS</span>
+              <span>BOLIVIA</span>
+            </ul>
+            <!-- Menú principal centrado -->
+            <ul class="menu">
+              <a href="/bienvenidopresidente">INICIO</a>
+              <a href="/calendario">CALENDARIO</a>
+              <a href="/mapa">MAPA</a>
+            </ul>
+            <!-- Inicio de sesión y botón a la derecha -->
+            <div class="right-section">
+              <ul class="extra-menu">
+                <li><a href="demostrations.html" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">{{usuario.nombre}}</a></li>
+              </ul>
+              <div class="halloween"></div>
+            </div>
+          </nav>
+        </header>
+      </div>
+      <div class="bienvenido">
+        <h1>BIENVENIDO, A ESPACIOS BOLIVIA</h1>
+        <p>Para el día de hoy tenemos {{eventos.length}} eventos.</p>
+        <p></p>
+
+    <div *ngIf="eventos.length > 0; else noEventos" class="evento-card-container"> 
+        <div class="evento-card" *ngFor="let evento of eventos">
+          <img [src]="evento.img_evento ? evento.img_evento : 'https://www.la-razon.com/wp-content/uploads/2023/01/19/18/carnaval-de-la-concordia-apg.jpg'" alt="{{ evento.nombre }}" class="evento-imagen" />
+          <h3>{{ evento.nombre }}</h3>
+          <p>{{ evento.tipo_evento }}</p>
+          <p>{{ evento.fecha_evento }}</p>
+          <p>{{ evento.hora_inicio }} - {{ evento.hora_fin }}</p>
+          <p>{{ evento.espacio }}</p>
+        </div>
+      </div>
+      
+      <ng-template #noEventos>
+        <p>No hay eventos disponibles en este momento.</p>
+      </ng-template>
+        
+
+      </div>
+    </div>
+  </div>
+  
+  
+  

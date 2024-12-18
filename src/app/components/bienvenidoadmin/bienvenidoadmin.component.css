@@ -1,0 +1,211 @@
+body {
+    background-color: #000; 
+    color: #fff;
+    font-family:'Trebuchet MS';
+    margin: 0;
+    padding: 0;
+  }
+  
+.fondo {
+    padding: 40px;
+    text-align: center;
+    background-color: #000
+  }
+  
+h1, h2 {
+    font-size: 2rem;
+    font-family: 'Trebuchet MS';
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: left;
+    margin-left: 0;
+  }
+  
+.boton {
+    padding: 10px 20px;
+    font-family: 'Trebuchet MS';
+    font-size: 1.3rem;
+    background-color: #008cff;
+    color: #ffffff; 
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+.boton:hover {
+    background-color: #ffffff;
+    color: black; 
+  }
+  
+.error {
+    color: #0077ff; 
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 0;
+}
+
+.error p {
+    font-family: 'Trebuchet MS';
+    font-size: 20px;
+}
+  
+.navegacion {
+    background-color: #000000; 
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    font-family:'Trebuchet MS';
+}
+
+header {
+    width: 100%;
+    padding: 1px 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+  
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 30px;
+    color: white;
+    text-transform: uppercase;
+}
+ 
+.navegacion {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+    margin-right: 30px;
+  }
+  
+.navegacion a {
+    text-decoration: none; 
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+  
+.navegacion a[href="/bienvenidoadmin"] {
+    text-decoration: underline; 
+}
+  
+.navegacion a:hover {
+    color: rgb(193, 185, 223);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Trebuchet MS';
+    color: #ffffff; 
+}
+  
+.boton-notificaciones {
+    display: inline-block;
+    text-decoration: none;
+}
+  
+  .icono-notificaciones{
+    width: 20px;
+    height: 20px;
+  }
+  
+  .icono-notificaciones:hover{
+    background-color: #008cff;
+  }
+  
+  .boton-usuario {
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .icono-usuario{
+    width: 40px;
+    height: 40px;
+  }
+  
+  
+  /* Estilo de los eventos */
+  .evento {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #111; 
+    border: 1px solid #333; 
+    border-radius: 8px;
+    margin: 10px 0;
+  }
+  
+  .evento-icono {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-right: 10px;
+  }
+  
+  .evento-info {
+    text-align: left;
+    flex: 1;
+  }
+  
+  .evento-boton {
+    padding: 10px 25px;
+    background-color: #006eff;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Trebuchet MS';
+  }
+  
+  .evento-boton:hover {
+    background-color: #008cff;
+  }
+  
+  .icono-mapa {
+    width: 120px; /* Ajusta el tamaño de las imágenes */
+    height: 100px;
+  }
+  
+  .icono-calendario{
+    width: 100px; /* Ajusta el tamaño de las imágenes */
+    height: 100px;
+  }
+  
+  p {
+    margin: 5px 0;
+    font-family: 'Trebuchet MS';
+    font-size: 20px;
+    color: white;
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  
+  .evento-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  

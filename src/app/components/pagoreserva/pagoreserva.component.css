@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:'Trebuchet MS';
+}
+
+header{
+    width: 500px;
+    height: 800px;
+    background-color:black;
+    text-align: center;
+    align-items:initial;
+    justify-content: center;
+    display: center;
+    padding: 20px;
+}
+
+/* Navegación */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px; /* Ajusta los márgenes internos */
+}
+
+/* Logotipo y nombre */
+.logo-nombre, .halloween {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna */
+    color: white;
+    font-weight: bold;      /* Hace el texto más destacado */
+}
+.logo span {
+    line-height: 1.2; /* Espaciado entre ESPACIOS y BOLIVIA */
+}
+
+/* Menú principal */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 120px; /* Espacio entre los elementos del menú */
+    margin: 0 auto; /* Centra el menú principal */
+    color: white;
+    text-decoration: underline;
+}
+
+.menu li {
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.menu li:hover {
+    background-color: #444;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Sección derecha: Inicio de sesión y botón */
+.right-section {
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    gap: 20px; /* Espacio entre "Inicio de sesión" y el botón */
+}
+
+.extra-menu {
+    list-style: none;
+}
+
+.extra-menu li {
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.extra-menu li:hover {
+    background-color: #444;
+}
+
+.extra-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    top: 50px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fondoN {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+body {
+    margin: 0;
+    background-image: url("/assets/fondoiniciosesion.jpg");
+    background-color: #000000;
+    background-size: 1400px 900px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display:block;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+}
+
+.formulario {
+    display: contents;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction:row;
+    align-items:flex-start;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+label {
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+#numeroTarjeta,
+#codigoTarjeta,
+#fechaExpiracion,
+#nombreTitular,
+#horaFinalizacion {
+    align-items: center;
+    width: 65%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ffffff;
+}
+
+button {
+    display: inline-block;
+    background-color: #0aebe4;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    padding: 20px 0px;
+    font-weight: bold;
+    border-radius: 30px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 350px;
+}
+
+.logos-pago {
+    text-align: center;
+}
+
+#toggle-visibility {
+    all: unset;
+    display: flex;
+    background: url('/assets/oculto.png') no-repeat center center;
+    background-size: contain;
+    border: none;
+    width: 50px;
+    height: 50px; 
+    margin-left: -20px;
+    margin-right: -20px;
+    cursor: pointer; 
+}
+
+#codigoTarjeta {
+    display:list-item;
+}
+
+button:hover {
+    background-color: #00c9bd;
+    color: black;
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+p{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    margin: 10px 0;
+    text-align: center;
+    border-color: #ffffff;
+    background-color: rgb(237, 240, 243);
+    width: 570px;
+    height: 200px;
+    text-align:left;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+p img{
+    width: 160px;
+    height: 160px;
+    margin-left: 10px;
+    margin-top: -120px;
+}
+
+.formulario input {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 1px solid #ffffff;
+}
+
+.formulario input:focus {
+    border-color: #0aebe4;
+    outline: none;
+    box-shadow: 0 0 5px #0aebe4;
+    height: 20px;
+    width: 20px;
+    text-decoration: underline;
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    min-height: 100vh;
+    margin: 0px;
+}

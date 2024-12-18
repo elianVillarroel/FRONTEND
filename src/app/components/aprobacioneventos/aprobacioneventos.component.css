@@ -1,0 +1,284 @@
+/* General */
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background-color: black;
+}
+
+/* Navegación */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px; /* Ajusta los márgenes internos */
+}
+
+/* Logotipo y nombre */
+.logo-nombre, .halloween {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna */
+    color: white;
+    font-weight: bold;      /* Hace el texto más destacado */
+}
+.logo span {
+    line-height: 1.2; /* Espaciado entre ESPACIOS y BOLIVIA */
+}
+
+/* Menú principal */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 120px; /* Espacio entre los elementos del menú */
+    margin: 0 auto; /* Centra el menú principal */
+    color: white;
+    text-decoration: underline;
+}
+
+.menu li {
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.menu li:hover {
+    background-color: #444;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Sección derecha: Inicio de sesión y botón */
+.right-section {
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    gap: 20px; /* Espacio entre "Inicio de sesión" y el botón */
+}
+
+.extra-menu {
+    list-style: none;
+}
+
+.extra-menu li {
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.extra-menu li:hover {
+    background-color: #444;
+}
+
+.extra-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+/* Parte izquierda (Eventos) */
+.evento {
+    background-image: url('/assets/fondoiniciosesion.jpg');
+    background-size: cover;         
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 45%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+.evento h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+input, textarea {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+textarea {
+    resize: none;
+    height: 5rem;
+}
+a {
+    color: #ffd700;
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-aprobar {
+    display: block;
+    margin: 4rem auto 0;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 1rem 122px;
+    display: flex;
+    justify-content: center;
+    width: 0.1px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+
+.btn-aprobar:hover {
+    background-color: #666;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #444;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.modal:target{
+    display: flex;
+}
+.modal-content{
+    background-color: #222;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+/* Boton dentro del modal */
+.modal-content .btn-cerrar {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #ffa500;
+    color: #222;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+.modal-content .btn-cerrar:hover{
+    background-color: #ffcc33;
+}
+
+
+
+
+
+/* Parte derecha (Tareas y Eventos) */
+.tareas {
+    background-color: #222;
+    color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 45%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+.tareas h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #ffa500;
+    font-size: 1.8rem;
+}
+.seccion {
+    margin-bottom: 2rem;
+}
+.seccion h2 {
+    color: #ffa500;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #ffa500;
+    padding-bottom: 0.5rem;
+}
+.seccion_opciones {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+.seccion_opciones img {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.seccion_opciones img:hover {
+    transform: scale(1.1);
+}
+.seccion_opciones p {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.seccion_opciones p:hover {
+    background-color: #ffa500;
+    color: #222;
+}
+.filtros {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+.filtros img {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.filtros img:hover {
+    transform: scale(1.1);
+}
+.filtros input[type="checkbox"] {
+    margin-right: 5px;
+}
+.filtros p {
+    background-color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.filtros p:hover {
+    background-color: #ffa500;
+    color: #222;
+}
+.no-results {
+    font-size: 0.9rem;
+    color: #bbb;
+    text-align: center;
+}

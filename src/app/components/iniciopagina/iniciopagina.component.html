@@ -1,0 +1,55 @@
+<div class="iniciopagina-container">
+    <header>
+        <div class="logo">ESPACIOS BOLIVIA</div>
+        <nav class="navegacion">
+            <a href="/iniciopagina">INICIO</a>
+            <a href="/calendario">CALENDARIO</a>
+            <a href="/mapa">MAPA</a>
+            <a href="/iniciosesion">INICIAR SESIÓN</a>
+            <a href="/registrogeneral" class="boton-registro">REGISTRO</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>PRÓXIMOS EVENTOS</h2>
+    </section>
+
+ <!--Nuevo carrusel con primeng-->
+  <p-carousel
+   [value]="eventos"
+   [numVisible]="4"
+   [numScroll]="2"
+   [circular]="true"
+   [autoplayInterval]="5000"
+  >
+   <ng-template let-evento pTemplate="item">
+     <div class="evento-card">
+       <img
+         [src]="evento.img_evento ? evento.img_evento : 'https://www.la-razon.com/wp-content/uploads/2023/01/19/18/carnaval-de-la-concordia-apg.jpg'"
+         alt="{{evento.nombre}}"
+         class="evento-img"
+       />
+       <h3>{{evento.nombre}}</h3>
+       <p><strong>Tipo:</strong>{{evento.tipo_evento}}</p>
+       <p><strong>Fecha:</strong>{{evento.fecha_evento}}</p>
+       <p><strong>Espacio:</strong>{{evento.espacio}}</p>
+
+     </div>
+   </ng-template>
+ </p-carousel>
+
+
+
+
+    <ng-template #noEventos>
+      <p>No hay eventos disponibles en este momento.</p>
+    </ng-template>
+
+<!--<div>-->
+  <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.6510026360356!2d-66.1540471250654!3d-17.380518583505477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e374053d43ff91%3A0xa5737a19da31793!2sCine%20Center!5e0!3m2!1ses-419!2sbo!4v1734146659429!5m2!1ses-419!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+  <!--{{evento.mapa}} -> ventana emergente <modal!-->
+<!--</div>-->
+
+</div>
+    
+
